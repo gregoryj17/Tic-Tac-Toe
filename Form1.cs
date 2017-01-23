@@ -131,7 +131,6 @@ namespace WindowsFormsApplication1
                 for (int j = 0; j < 3; j++)
                 {
                     Rectangle rect = new Rectangle(x + i * cellSize, y + j * cellSize, cellSize, cellSize);
-                    //if (i == col && j == row) e.Graphics.FillRectangle(Brushes.Yellow, rect);
                     e.Graphics.DrawRectangle(Pens.Chocolate, rect);
                     Font font = new Font("Ubuntu", cellSize * 3 * 72 / 96 / 4);
                     e.Graphics.DrawString(board[i,j]==0?"X":board[i,j]==1?"O":"", font, board[i,j]==0?Brushes.Navy:Brushes.Crimson, x + (cellSize / 8) + (cellSize * i), y + (cellSize / 8) + (cellSize * j));
